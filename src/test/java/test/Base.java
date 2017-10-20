@@ -30,13 +30,13 @@ import org.junit.internal.AssumptionViolatedException;
 class Base {
 
     protected void run() {
-    
-        double r = Math.random(2);
-        if (r < 0.2) {
-           fail("oops");
-        } else if (r < 0.3) {
+      //
+      //  double r = Math.random(2);
+      //  if (r < 0.2) {
+      //     fail("oops");
+      //  } else if (r < 0.3) {
             throw new AssumptionViolatedException("skipping");
-        }
+      //  }
     }
 
 }
